@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-pink: hsl(275, 100%, 97%);
+  --clr-purple-400: hsl(292, 16%, 49%);
+  --clr-purple-600: hsl(292, 42%, 14%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+body {
+  background-color: var(--clr-light-pink);
+  font-family: "Work Sans", serif;
+  color: var(--clr-purple-600);
+}
+main {
+  background: url(./images/background-pattern-mobile.svg);
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.accordion-container {
+  background-color: white;
+  border-radius: 8px;
+
+  width: 325px;
+  padding: 20px 30px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.accordion-item p {
+  color: var(--clr-purple-400);
+  margin-top: 20px;
+  font-size: 0.938rem;
+}
+.accordion-item > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+header img {
+  height: 24px;
+}
+.accordion-item:not(:last-child) {
+  border-bottom: 1px solid var(--clr-light-pink);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 475px) {
+  main {
+    background: url(./images/background-pattern-desktop.svg);
+  }
+  .accordion-container {
+    width: 450px;
+  }
+}
