@@ -31,7 +31,7 @@ body {
   color: var(--clr-purple-600);
 }
 main {
-  background: url(./images/background-pattern-mobile.svg);
+  background: url("./images/background-pattern-mobile.svg");
   height: 400px;
   position: relative;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ header {
 
 @media only screen and (min-width: 475px) {
   main {
-    background: url(./images/background-pattern-desktop.svg);
+    background: url("./images/background-pattern-desktop.svg");
   }
   .accordion-container {
     width: 450px;
